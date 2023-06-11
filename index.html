@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacions - Francesc Montañez Rosell</title>
+    <link rel="stylesheet" href="./estilo.css">
+    <script src="https://kit.fontawesome.com/4ac48fbc02.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+       <h1>Animacions - Francesc Montañez Rosell</h1>
+        
+    </header>
+    <main>
+        <div class="animacion1"> 
+
+        </div>
+        <div class="contenedor" id="foto">
+            <div class="carta">
+                <div class="front">
+                    <img src="imagenes/gato.jpg" class="imagen" alt="Imagen Perro" style="width: 250px;height: 250px;">
+                </div>
+                <div class="back">
+                    <p>Francesc Montañez Rosell</p>
+                    <i class="fa-solid fa-arrow-down" id="icono"></i>
+                </div
+            </div>
+        </div>
+       
+    </main>
+
+</body>
+<script>
+    document.querySelector('header').addEventListener("click", ()=>{
+        console.log("Click");
+        const Contenedor = document.querySelector('.contenedor');
+        Contenedor.classList.add('nuevoMarginTop');
+        
+    })
+    document.querySelector('#foto').addEventListener("click", ()=>{
+    })
+    document.querySelector('#icono').addEventListener("click", ()=>{
+        
+        const contenedor = document.querySelector('.contenedor');
+        contenedor.classList.add('visibilidad')
+        const div = document.querySelector(".animacion1")
+        div.classList.remove(".animacion1")
+        div.classList.add("animacion")
+    })
+</script>
+</html>
